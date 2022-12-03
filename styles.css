@@ -54,13 +54,19 @@ a{
     grid-template-columns: 1fr 1fr;
     margin: 0;
     padding: 0;
+    max-width: 1330px;
+    margin-bottom: 3.5rem;
     
 }
 .nav-list{
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     display: none;
 }
+.nav-list a{
+    color: hsl(236, 13%, 42%);
+}
+
 @media screen and (min-width: 375px) {
     .container{
         max-width: 1440px;
@@ -85,7 +91,7 @@ a{
 }
 /* Body Block */
 .body-block-right {
-    background-color: black;
+    background-color: hsl(240, 100%, 5%);
     color: #fff;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -136,6 +142,22 @@ a{
 .body-block-text a{
     font-weight: 700;
 }
+.body-block{
+    margin-bottom: 9rem;
+}
+.body-block-text h1{
+    color: hsl(240, 100%, 5%);
+    font-size: 4rem;
+    font-weight: 900;
+    padding-right: 5rem;
+}
+.body-block-text2{
+    line-height: 2.5rem;
+    
+}
+.body-block-text2 p{
+    margin-bottom: 0;
+}
 @media screen and (min-width: 375px) {
     .container{
         max-width: 1440px;
@@ -150,6 +172,7 @@ a{
     .body-block-text{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 2rem;
         max-width: 900px;
         height: 2px;
         
@@ -176,7 +199,7 @@ a{
     margin-bottom: 1rem;
 }
 .media-block-item p{
-    opacity: 0.3;
+    opacity: 0.6;
 }
 .media-block-item h3{
     margin-top: 0;
@@ -189,6 +212,8 @@ a{
 }
 .media-block{
     gap: 2rem;
+    padding-top: 4rem;
+    max-width: 1330px;
 }
 @media screen and (min-width: 375px) {
     .media-block{
